@@ -150,7 +150,7 @@ async function RequestForProvidingAcceptanceDataCausesDeterminingTheLanPortRole(
           *       /logical-termination-point={uuid}/layer-protocol={local-id}
           *         /ethernet-container-2-0:ethernet-container-pac/ethernet-container-status?fields=interface-status
           *****************************************************************************************************/
-        let ethernetContainerStatusResponse = await fetchServingEthernetContainerStatus(mountName, requestHeaders, traceIndicatorIncrementer, clientContainerLtp, clientAndFieldParamsForEthernetContainerStatus, traceIndicatorIncrementer);
+        let ethernetContainerStatusResponse = await fetchServingEthernetContainerStatus(mountName, requestHeaders, traceIndicatorIncrementer, clientContainerLtp, clientAndFieldParamsForEthernetContainerStatus);
         if (Object.keys(ethernetContainerStatusResponse).length != 0) {
           if (ethernetContainerStatusResponse.servingEthernetContainerStatus != undefined) {
             configuredLanPortRole.servingEthernetContainerStatus = ethernetContainerStatusResponse.servingEthernetContainerStatus;
