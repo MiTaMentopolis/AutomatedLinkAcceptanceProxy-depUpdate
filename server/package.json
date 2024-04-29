@@ -25,5 +25,6 @@
   },
   "overrides": {
     "axios@<=1.6.4": "1.6.4"
+    "@apidevtools/json-schema-ref-parser@<=11.2.0": "11.2.0"
   }
 }
